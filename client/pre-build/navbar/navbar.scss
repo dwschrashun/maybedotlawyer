@@ -2,6 +2,29 @@
 	border-radius: 0;
   	position:fixed;
  	width: 100%;
- 	z-index: 2;
+ 	z-index: 5;
 }
 
+.purchase {
+	margin: 15px;
+}
+
+#today {
+	animation-duration: 10s;
+  	animation-name: rainbow;
+ 	animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+	0% {color: #fff;}
+	10% {color: #000;}
+	20% {color: #eee;}
+	30% {color: #111;}
+	40% {color: #ddd;}
+	50% {color: #222;}
+	60% {color: #ccc;}
+	70% {color: #333;}
+	80% {color: #bbb;}
+	90% {color: #aaa;}
+	100% {color: #444;}
+}
