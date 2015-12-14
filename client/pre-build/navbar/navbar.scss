@@ -9,22 +9,25 @@
 	margin: 15px;
 }
 
-#today {
-	animation-duration: 10s;
-  	animation-name: rainbow;
- 	animation-iteration-count: infinite;
+.color-link {
+	color: black;
 }
 
 @keyframes rainbow {
-	0% {color: #fff;}
-	10% {color: #000;}
-	20% {color: #eee;}
-	30% {color: #111;}
-	40% {color: #ddd;}
-	50% {color: #222;}
-	60% {color: #ccc;}
-	70% {color: #333;}
-	80% {color: #bbb;}
-	90% {color: #aaa;}
-	100% {color: #444;}
+    0% {color: red; }
+	10% {color: blue; }
+	20% {color: orange;}
+	30% {color: black;}
+	40% {color: yellow;}
+	50% {color: grey;}
+	60% {color: purple;}
+	70% {color: green;}
+	80% {color: white;}
+	90% {color: pink;}
+    100% {color: red;}
+}
+
+#today {
+	animation: rainbow 10s infinite !important;
+	font-weight: bold;
 }

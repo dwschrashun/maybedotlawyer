@@ -1,11 +1,5 @@
 <section id="home">
-	<canvas id="bg" width="{{canvasSize.width}}" height="{{canvasSize.height}}">
-<!-- 		<img id="home-img" src="/baglawyer.jpg">
-		<div id="overlay">
-			<img id="nochin" src="nochin.gif" />
-			<img id="chin" src="chin.gif" />
-		</div> -->
-	</canvas>
+	<canvas id="bg" width="{{canvasSize.width}}" height="{{canvasSize.height}}"></canvas>
 	<div class="home-text home-overlay" id="lawyer-text" ng-click="lawyerClick()">{{lawyer}}</div>
 	<div class="home-overlay" ng-class="{'home-text': maybe, 'no-show': !maybe}" id="maybe-bubble" ng-click="maybeClick()">
 		<img id="bubble" src="web-thoughtbubble.gif"/>

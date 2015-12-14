@@ -12,10 +12,6 @@
 	position: absolute;
 }
 
-// #navbar {
-// 	height: 5%;
-// }
-
 .home-text:hover {
 	cursor: pointer;
 }
@@ -72,13 +68,6 @@
 	// width: 50px;
 }
 
-.flood-div {
-	// left: -65%;
-	// top: -50%;
-	// transition: left 3s linear, right 3s linear;
-	// transition: height 3s linear, width 3s linear, left 3s linear, right 3s linear;
-}
-
 .flood-off {
 	height: 0px;
 	width: 0px;
@@ -92,10 +81,6 @@
 	width: 500vw;
 	top: -100vw;
 	left: -300vw;
-	// height: 100px;
-	// width: 100px;
-	// top: 0px;
-	// left: 0px;
 	transition: height 3s ease-in, width 3s ease-in, left 3s ease-in, top 3s ease-in;
 }
 .no-show {
