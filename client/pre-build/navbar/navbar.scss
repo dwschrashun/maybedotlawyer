@@ -2,6 +2,32 @@
 	border-radius: 0;
   	position:fixed;
  	width: 100%;
- 	z-index: 2;
+ 	z-index: 5;
 }
 
+.purchase {
+	margin: 15px;
+}
+
+.color-link {
+	color: black;
+}
+
+@keyframes rainbow {
+    0% {color: red; }
+	10% {color: blue; }
+	20% {color: orange;}
+	30% {color: black;}
+	40% {color: yellow;}
+	50% {color: grey;}
+	60% {color: purple;}
+	70% {color: green;}
+	80% {color: white;}
+	90% {color: pink;}
+    100% {color: red;}
+}
+
+#today {
+	animation: rainbow 10s infinite !important;
+	font-weight: bold;
+}

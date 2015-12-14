@@ -1,4 +1,11 @@
 <section id="home">
-	<img id="home-img" src="/baglawyer.jpg">
-	<div id="home-text">{{lawyer}}</div>
+	<canvas id="bg" width="{{canvasSize.width}}" height="{{canvasSize.height}}"></canvas>
+	<div class="home-text home-overlay" id="lawyer-text" ng-click="lawyerClick()">{{lawyer}}</div>
+	<div class="home-overlay" ng-class="{'home-text': maybe, 'no-show': !maybe}" id="maybe-bubble" ng-click="maybeClick()">
+		<img id="bubble" src="web-thoughtbubble.gif"/>
+		<div>MAYBE</div>
+	</div>
+	<div id="flooder" ng-class="{'flood-div': flood}" class="home-overlay" style="{{mouthPosStr}}">
+		<img id="flood" ng-class="{'flood-on': flood, 'flood-off': !flood}" src="black_smudge.png">
+	</div>
 </section>
