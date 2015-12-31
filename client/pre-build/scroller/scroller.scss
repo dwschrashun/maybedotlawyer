@@ -81,6 +81,14 @@
 	}
 }
 
+#panos {
+	position: relative;
+	left: 100%;
+	overflow: hidden;
+	width: 0px;
+	height: 0px;
+}
+
 //2489 x 1969
 //init width / init height = final width / final height
 // iheight / iwidth = fheight / fwidth

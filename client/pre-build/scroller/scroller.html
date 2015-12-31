@@ -4,5 +4,10 @@
 <div class="scroll" id="lyrics-div" ng-show="lyricsDisplay" ng-click="showLyrics()">
 	<p>{{lyrics}}</p>
 </div>
+<div id="panos">
+	<div ng-repeat="song in songs" style="top: {{song.x}}; left: {{song.y}}">
+		<img src="pano-{{$index}}.gif">
+	</div>
+</div>
 <beach id="beach" ng-show="scrollForever"></beach>
 <player id="player-wrap" ng-show="player"></player>
