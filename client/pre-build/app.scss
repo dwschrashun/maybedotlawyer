@@ -17,7 +17,13 @@
 	top: 50px;
 }
 
+body {
+  background-color: black;
+}
+
 // Add your fractal Sass files below!
 @import 'navbar/navbar';
 @import 'home/home';
 @import 'scroller/scroller';
+@import 'player/player';
+@import 'footer/footer';

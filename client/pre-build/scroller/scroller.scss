@@ -54,6 +54,17 @@
 	height: 10%
 }
 
+#jambox {
+	position: absolute;
+	top: 85%;
+	left: 20%;
+	opacity: 1;
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
+
 #text {
 	position: absolute;
 	top: 50vh;

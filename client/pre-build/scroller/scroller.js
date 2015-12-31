@@ -9,9 +9,14 @@ app.config(function($stateProvider) {
 app.controller("ScrollerController", function ($scope, LyricsFactory) {
 	$scope.lyricDisplay = false;
 	$scope.scrollForever = false;
+	$scope.player = false;
 	$scope.lyrics = LyricsFactory;
 	$scope.showLyrics = function () {
 		$scope.lyricsDisplay = !$scope.lyricsDisplay;
 		$scope.scrollForever = true;
+		$scope.$broadcast("scrollForever");
+	};
+	$scope.showPlayer = function () {
+		$scope.player = true;
 	};
 });
