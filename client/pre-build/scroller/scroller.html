@@ -8,6 +8,9 @@
 	<div class="scroll" id="lyrics-div" ng-show="lyricsDisplay" ng-click="showLyrics()">
 		<p>{{lyrics}}</p>
 	</div>
+	<div id="scroll-msg" ng-show="scrollForever">
+		<p>SCROLL DOWN NOW ⬇</p>
+	</div>
 	<div id="panos" ng-show="player">
 		<div ng-repeat="song in songs" class="pano-box" id="pano{{$index}}" style="top: {{song.y}}px; left: {{vw}}px">
 			<img ng-src="pano-{{$index}}.gif">

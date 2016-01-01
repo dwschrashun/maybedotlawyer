@@ -29,12 +29,17 @@
 		top: 6vw;
 		left: 5vw;
 	}
+
 }
 
 #bubble {
 	position: absolute;
 	height: 25vw;
 	width: 28vw;
+	border: 0px;
+	&:hover {
+		border: 10px dotted black;
+	}
 }
 
 #bg {
