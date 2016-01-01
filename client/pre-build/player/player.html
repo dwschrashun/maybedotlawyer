@@ -4,7 +4,7 @@
 			<li ng-repeat="song in songs" ng-class="{'active': current === $index}"><a ng-click="playSong($index)">{{song.name}}</a></li>
 			<li><a ng-click="pauseAudio()">TURN IT OFF</a></li>
 		</ul>
-		<audio src="{{currentSong}}" type="audio/mpeg">
+		<audio ng-src="{{currentSong}}" type="audio/mpeg">
 		</audio>
 	</div>
 </div>

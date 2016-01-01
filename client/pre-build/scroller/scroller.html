@@ -1,14 +1,19 @@
-<div id="paper" class="scroll">
-	<img src="paper.gif" class="pape spinpape" ng-click="showLyrics()"/>
+<div ng-show="!loaded">
+	<p class="load-text">LOADING THE LATEST THINGS</p>
 </div>
-<div class="scroll" id="lyrics-div" ng-show="lyricsDisplay" ng-click="showLyrics()">
-	<p>{{lyrics}}</p>
-</div>
-<div id="panos" ng-show="player">
-	<div ng-repeat="song in songs" class="pano-box" id="pano{{$index}}" style="top: {{song.y}}px; left: {{vw}}px">
-		<img src="pano-{{$index}}.gif">
-		<!-- <p class="song-title">{{song.name}}</p> -->
+<div ng-show="loaded">
+	<div id="paper" class="scroll">
+		<img src="paper.gif" class="pape spinpape" ng-click="showLyrics()"/>
 	</div>
+	<div class="scroll" id="lyrics-div" ng-show="lyricsDisplay" ng-click="showLyrics()">
+		<p>{{lyrics}}</p>
+	</div>
+	<div id="panos" ng-show="player">
+		<div ng-repeat="song in songs" class="pano-box" id="pano{{$index}}" style="top: {{song.y}}px; left: {{vw}}px">
+			<img ng-src="pano-{{$index}}.gif">
+			<!-- <p class="song-title">{{song.name}}</p> -->
+		</div>
+	</div>
+	<beach id="beach" ng-show="scrollForever"></beach>
+	<player id="player-wrap" ng-show="player"></player>
 </div>
-<beach id="beach" ng-show="scrollForever"></beach>
-<player id="player-wrap" ng-show="player"></player>
