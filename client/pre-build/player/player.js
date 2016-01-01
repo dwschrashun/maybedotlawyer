@@ -5,6 +5,10 @@ app.directive("player", function (SongsFactory, $document) {
 		link: function (scope, element, attributes) {
 			var vpWidth = document.documentElement.clientWidth;
 			var audio = element.find("audio")[0];
+			audio.addEventListener("ended", function () {
+				if (scope.current === 7) return;
+				scope.playSong(scope.current + 1);
+			});
 			scope.current = 0;
 			scope.currentSong = "0.mp3";
 			scope.songs = SongsFactory.getSongs();
