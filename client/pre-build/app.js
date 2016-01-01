@@ -1,4 +1,4 @@
-var app = angular.module('Snowboarding', ['ui.router', 'duParallax']);
+var app = angular.module('Snowboarding', ['ui.router', 'duScroll']);
 
 app.config(function ($urlRouterProvider, $locationProvider) {
    // This turns off hashbang urls (/#about) and changes it to something normal (/about)

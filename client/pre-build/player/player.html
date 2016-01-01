@@ -1,7 +1,7 @@
 <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
 	<div class="navbar-collapse collapse">	
 		<ul class="nav navbar-nav">
-			<li ng-repeat="song in songs"><a ng-click="playSong($index)">{{song.name}}</a></li>
+			<li ng-repeat="song in songs" ng-class="{'active': current === $index}"><a ng-click="playSong($index)">{{song.name}}</a></li>
 			<li><a ng-click="pauseAudio()">TURN IT OFF</a></li>
 		</ul>
 		<audio src="{{currentSong}}" type="audio/mpeg">

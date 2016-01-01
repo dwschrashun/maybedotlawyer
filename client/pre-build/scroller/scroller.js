@@ -11,6 +11,8 @@ app.controller("ScrollerController", function ($scope, LyricsFactory) {
 	$scope.scrollForever = false;
 	$scope.player = false;
 	$scope.lyrics = LyricsFactory;
+	//$scope.panoStyle = "height: 0px; width: 0px";
+	//$scope.panoStyle = "overflow: hidden; height: 0px; width: 0px";
 	$scope.showLyrics = function () {
 		$scope.lyricsDisplay = !$scope.lyricsDisplay;
 		$scope.scrollForever = true;
@@ -18,5 +20,8 @@ app.controller("ScrollerController", function ($scope, LyricsFactory) {
 	};
 	$scope.showPlayer = function () {
 		$scope.player = true;
+		//$scope.panoStyle = "";
+		//$scope.panoStyle = "overflow: scroll; height: 0px; width: 0px";
 	};
+	$scope.vw = document.documentElement.clientWidth;
 });

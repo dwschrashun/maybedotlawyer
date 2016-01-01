@@ -51,7 +51,8 @@
 	position: absolute;
 	padding-top: 5vh;
 	background-color: black;
-	height: 10%
+	height: 10%;
+	top: 100vh;
 }
 
 #jambox {
@@ -82,13 +83,19 @@
 }
 
 #panos {
-	position: relative;
+	position: absolute;
 	left: 100%;
-	overflow: hidden;
-	width: 0px;
-	height: 0px;
+	overflow-y: hidden;
 }
-
+.song-title {
+	position: absolute;
+	top: 20vh;
+	left: 20vw;
+	font-size: 15vh;
+}
+.pano-box {
+	//display: relative;
+}
 //2489 x 1969
 //init width / init height = final width / final height
 // iheight / iwidth = fheight / fwidth

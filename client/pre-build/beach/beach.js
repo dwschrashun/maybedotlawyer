@@ -1,4 +1,4 @@
-app.directive("beach", function (parallaxHelper) {
+app.directive("beach", function () {
 	return {
 		restrict: "E",
 		templateUrl: "/pre-build/beach/beach.html",
@@ -16,7 +16,7 @@ app.directive("beach", function (parallaxHelper) {
 				    duration: bgHeight * 0.8,
 				})
 				.setTween(beachTween1)
-				.addIndicators()
+				//.addIndicators()
 				.addTo(scrollControl);	
 			});
 		}
