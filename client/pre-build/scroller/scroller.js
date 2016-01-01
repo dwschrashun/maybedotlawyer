@@ -12,9 +12,10 @@ app.controller("ScrollerController", function ($scope, LyricsFactory, $window) {
 	$scope.player = false;
 	$scope.loaded = false;
 	$scope.lyrics = LyricsFactory;
-	// $scope.$on('$viewContentLoaded', function(event){ 
-	// 	console.log("loaded", event);
-	// });
+	$scope.$on('$viewContentLoaded', function(event){ 
+		console.log("loaded", event);
+		$scope.loaded = true;
+	});
 	// console.log("window?", $window);
 	angular.element(window).on("load", function (event) {
 		console.log("loaded");
