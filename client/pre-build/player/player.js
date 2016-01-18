@@ -6,6 +6,7 @@ app.directive("player", function (SongsFactory, $document) {
 			var vpWidth = document.documentElement.clientWidth;
 			var audio = element.find("audio")[0];
 			audio.addEventListener("ended", function () {
+				// console.log("song emded:", scope.current);
 				if (scope.current === 7) return;
 				scope.playSong(scope.current + 1);
 			});
@@ -24,12 +25,14 @@ app.directive("player", function (SongsFactory, $document) {
 					else audio.pause();
 				}
 				else {
+					// console.log("playing:", index);
 					scope.current = index;
 					scope.currentSong = index + ".mp3";
 					scrollEl = getScrollEl(scope.current);
 					scrollToSong(scrollEl);
 					audio.load();
 					setTimeout(function () {
+						scope.$digest();
 						scrollSong();
 						audio.play();
 					}, 3000);
